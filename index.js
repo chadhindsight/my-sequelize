@@ -54,13 +54,15 @@ app.get('/:id', async (req, res) => {
     const baddieID = req.params.id
 
     try {
-        const baddieEntry = baddie.findOne({
+        const baddieEntry = await baddie.findOne({
             where: { id: baddieID }
         })
         if (baddieEntry === 0) {
             // Baddie not found
             return res.status(404).json({ error: 'Entry not found.' });
         }
+        res.send(baddieEntry)
+
     }
     catch (error) {
         console.log('Error finding that entry:', error);
