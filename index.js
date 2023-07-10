@@ -32,5 +32,4 @@ app.post('/', async (req, res) => {
 })
 
 // Delete new entry
-
 app.listen(PORT, console.log(`Server started on port ${PORT}!`));
