@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+require('dotenv').config();
 
 // Establishes connection configurations to the specified db
 module.exports = new Sequelize('baddb', 'me', 'password', {
