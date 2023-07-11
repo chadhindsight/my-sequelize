@@ -1,5 +1,5 @@
 const express = require('express');
-const baddie = require('./models/Baddie.js')
+const baddie = require('./models/Baddie.js');
 const PORT = 8000;
 const app = express();
 
@@ -65,7 +65,7 @@ app.get('/:id', async (req, res) => {
             // Baddie not found
             return res.status(404).json({ error: 'Entry not found.' });
         }
-        res.send(baddieEntry)
+        else { res.send(baddieEntry) }
 
     }
     catch (error) {
@@ -74,7 +74,7 @@ app.get('/:id', async (req, res) => {
 })
 
 
-// Delete an entry
+// Delete a baddie entry
 app.delete('/:id', async (req, res) => {
     const baddieID = req.params.id;
 
