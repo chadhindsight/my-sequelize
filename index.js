@@ -21,8 +21,8 @@ app.get('/', async (req, res) => {
         res.send(baddieList)
     }
 
-    catch (erorr) {
-        console.log('Error getting entries', erorr);
+    catch (error) {
+        console.log('Error getting baddies', erorr);
     }
 })
 
