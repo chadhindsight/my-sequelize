@@ -15,11 +15,15 @@ db.authenticate()
     .catch(err => console.log('Error: ' + err))
 
 // ROUTES
-app.get('/', (req, res) => {
-    baddie.findAll()
-        .then(bad => {
-            res.send(bad)
-        })
+app.get('/', async (req, res) => {
+    try {
+        const baddieList = await baddie.findAll()
+        res.send(baddieList)
+    }
+
+    catch (erorr) {
+        console.log('Error getting entries', erorr);
+    }
 })
 
 // Add new entry to db
