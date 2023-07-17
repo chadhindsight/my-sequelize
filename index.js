@@ -33,6 +33,7 @@ app.post('/', async (req, res) => {
         ...req.body
     })
     // Show full baddie list after adding a new entry
+    console.log(`The new entry is ${newBaddie}`);
     res.redirect("/")
 })
 
