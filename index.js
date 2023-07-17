@@ -1,5 +1,5 @@
 const express = require('express');
-const baddie = require('./models/Baddie.js')
+const baddie = require('./models/Baddie.js');
 const PORT = 8000;
 const app = express();
 
@@ -32,7 +32,8 @@ app.post('/', async (req, res) => {
     const newBaddie = await baddie.create({
         ...req.body
     })
-    res.send(newBaddie)
+    // Show full baddie list after adding a new entry
+    res.redirect("/")
 })
 
 
