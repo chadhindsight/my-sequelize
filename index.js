@@ -9,6 +9,19 @@ app.use(express.json());
 //Database
 const db = require('./config/db');
 
+// server.js
+
+const cors = require("cors");
+
+app.use(
+    cors({
+        origin: "http://localhost:5173",
+        allowedHeaders: ["Content-Type", "Authorization"],
+        methods: ["GET", "POST", "PATCH", "DELETE"],
+    })
+);
+
+
 // Test DB
 db.authenticate()
     .then(() => console.log('Database connected...'))
