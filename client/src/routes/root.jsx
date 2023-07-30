@@ -1,5 +1,6 @@
 export default function Root() {
   return (
+    // TODO: Add Header, and Footer 
     <>
       <div id="sidebar">
         <h1 className="text-3xl font-bold underline">Baddie Project</h1>
