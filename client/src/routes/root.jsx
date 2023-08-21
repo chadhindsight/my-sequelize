@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 export default function Root() {
   return (
     // TODO: Add Header, and Footer 
@@ -39,6 +41,7 @@ export default function Root() {
         </nav>
       </div>
       <div id="detail"></div>
+      <Footer/>
     </>
   );
 }
