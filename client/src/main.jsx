@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-    // The '/addbaddie' route should be nested
+    // The '/addbaddie' route should be nested here
   },
 ]);
 
