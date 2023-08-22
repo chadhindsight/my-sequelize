@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 
 export default function Root() {
@@ -40,7 +41,9 @@ export default function Root() {
           </ul>
         </nav>
       </div>
-      <div id="detail"></div>
+      <div id="detail">
+        <Outlet />
+      </div>
       <Footer/>
     </>
   );

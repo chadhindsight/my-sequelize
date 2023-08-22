@@ -21,8 +21,7 @@ app.use(
     })
 );
 
-// route handler following Dakota's example
-app.use("/api/baddies", baddieRouter);
+
 
 // Test DB
 db.authenticate()
@@ -110,5 +109,6 @@ db.authenticate()
 //         console.log('Error updating entry:', error);
 //     }
 // })
-
+// route handler following Dakota's example
+app.use("/api/baddies", baddieRouter);
 app.listen(PORT, console.log(`Server started on port ${PORT}`));

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const baddie = require('./models/Baddie.js');
+const baddie = require('../models/Baddie.js');
 
 
 // CRUD for baddies
