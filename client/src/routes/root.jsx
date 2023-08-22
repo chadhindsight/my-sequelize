@@ -5,7 +5,7 @@ export default function Root() {
     // TODO: Add Header, and Footer 
     <>
       <div id="sidebar">
-        <h1 className="text-3xl font-bold underline">Baddie Project</h1>
+        <h1 className="text-3xl font-bold underline">Baddies</h1>
         <div>
           <form id="search-form" role="search">
             <input
