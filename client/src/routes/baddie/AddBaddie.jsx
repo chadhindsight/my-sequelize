@@ -1,4 +1,5 @@
 const AddBaddie = () => {
+    // on '/api/baddies/new'
     return (
         <div>
             

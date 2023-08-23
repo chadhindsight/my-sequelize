@@ -1,5 +1,7 @@
 
 const DeleteBaddies = () => {
+        // on '/api/baddies/:id'
+
     return (
         <div>
             

@@ -7,13 +7,21 @@ import {
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./routes/error-page";
+import BaddieList, {loader as baddieLoader} from "./components/BaddieList";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-    // The '/addbaddie' route should be nested here
+    //The '/addbaddie' route should be nested
+    children: [
+      {
+        index:true,
+        element: <BaddieList/>,
+        loader: baddieLoader
+      }
+    ],
   },
 ]);
 
