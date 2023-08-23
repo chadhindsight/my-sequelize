@@ -7,7 +7,7 @@ import {
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./routes/error-page";
-import Baddie, {loader as baddieLoader} from "./components/Baddie";
+import BaddieList, {loader as baddieLoader} from "./components/BaddieList";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         index:true,
-        element: <Baddie/>,
+        element: <BaddieList/>,
         loader: baddieLoader
       }
     ],
