@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 
 export async function loader() {
     // "/api/baddies" not working, might need to check Dakota's code
-    let url = "http://localhost:8000/api/baddies";
+    let url = "/api/baddies";
     const response = await fetch(url);
     const baddies = await response.json();
 
