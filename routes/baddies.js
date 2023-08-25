@@ -23,12 +23,12 @@ router.post('/', async (req, res) => {
     })
     // Show full baddie list after adding a new entry
     console.log(`The new entry is ${newBaddie}`);
-    res.redirect("/")
+    res.status(201).json(newBaddie)
 })
 
 
 // Update an entry
-router.put('/:id', async (req, res) => {
+router.patch('/:id', async (req, res) => {
     const baddieID = req.params.id;
     const newData = req.body;
 
