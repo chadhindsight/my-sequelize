@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import Baddie from "./Baddie";
+import Baddie from "../../components/Baddie";
 
 export async function loader() {
     // "/api/baddies" not working, might need to check Dakota's code
@@ -12,7 +12,7 @@ export async function loader() {
 
 export default function BaddieList() {
     const {baddies} = useLoaderData()
-
+    console.log(baddies)
     return (
         <>
         {/* <ul>
