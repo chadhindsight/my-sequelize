@@ -5,14 +5,10 @@ export default function Root() {
   return (
     // TODO: Add Header, and Footer 
     <>
+    <section id="baddie-parent">
+
       <div id="sidebar">
         <h1 className="text-3xl font-bold underline">Baddies</h1>
-        <div>
-    
-          <form method="post">
-            <button type="submit">New</button>
-          </form>
-        </div>
         <nav>
           <ul>
             <li>
@@ -23,10 +19,11 @@ export default function Root() {
             </li>
           </ul>
         </nav>
-      </div>
-      <div id="detail">
+      </div> 
+       <section id="detail">
         <Outlet />
-      </div>
+      </section>
+    </section>
       <Footer/>
     </>
   );
