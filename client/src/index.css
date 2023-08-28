@@ -10,3 +10,23 @@
   justify-content: center;
   width: 100vw;
 }
+
+footer {
+  margin-top: 50%;
+}
+#baddie-parent {
+  display: flex;
+  justify-content: center;
+}
+#detail {
+  flex: 1;
+  padding: 2rem 4rem;
+  width: 100%;
+}
+
+/* Maybe you can yeet this if not needed */
+#detail.loading {
+  opacity: 0.25;
+  transition: opacity 200ms;
+  transition-delay: 200ms;
+}

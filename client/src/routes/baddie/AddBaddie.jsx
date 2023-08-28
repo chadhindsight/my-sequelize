@@ -1,10 +1,9 @@
 import { Form, redirect, useActionData } from "react-router-dom";
 
-export async function action({ request, params }) {
+export async function action({ request }) {
   let formData = await request.formData();
   let baddieData = Object.fromEntries(formData);
   baddieData.age = parseInt(baddieData.age)
-  console.log('buns',params, formData, baddieData)
 
   try {
     const response = await fetch("/api/baddies", {

@@ -2,32 +2,30 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 
 export default function Root() {
+ let baddieTextDm = "text-md underline dark:text-white";
+
   return (
-    // TODO: Add Header, and Footer 
-    <>
-      <div id="sidebar">
-        <h1 className="text-3xl font-bold underline">Baddies</h1>
-        <div>
-    
-          <form method="post">
-            <button type="submit">New</button>
-          </form>
-        </div>
+    <main className="bg-neutral-200 text-center dark:bg-neutral-700">
+    <section id="baddie-parent">
+
+      <aside id="sidebar">
+        <h1 className="text-3xl font-bold dark:text-white">Baddies</h1>
         <nav>
           <ul>
-            <li>
+            <li  className={baddieTextDm}>
               <a href={`/contacts/1`}>Your Name</a>
             </li>
-            <li>
+            <li className={baddieTextDm}>
               <a href={`/contacts/2`}>Your Friend</a>
             </li>
           </ul>
         </nav>
-      </div>
-      <div id="detail">
+      </aside> 
+       <section id="detail">
         <Outlet />
-      </div>
+      </section>
+    </section>
       <Footer/>
-    </>
+    </main>
   );
 }
