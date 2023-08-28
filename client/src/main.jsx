@@ -7,7 +7,7 @@ import {
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./routes/error-page";
-import BaddieList, {loader as baddieLoader} from "./routes/baddie/BaddieList";
+import Placeholder, {loader as baddieLoader} from "./routes/baddie/Placholder";
 import AddBaddie, {action as addBaddieAction} from "./routes/baddie/AddBaddie";
 
 const router = createBrowserRouter([
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         index:true,
-        element: <BaddieList/>,
+        element: <Placeholder/>,
         loader: baddieLoader,
       },
       {
