@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 export default function Root() {
   return (
     // TODO: Add Header, and Footer 
-    <>
+    <main className="bg-neutral-200 text-center dark:bg-neutral-700">
     <section id="baddie-parent">
 
-      <div id="sidebar">
+      <aside id="sidebar">
         <h1 className="text-3xl font-bold underline">Baddies</h1>
         <nav>
           <ul>
@@ -19,12 +19,12 @@ export default function Root() {
             </li>
           </ul>
         </nav>
-      </div> 
+      </aside> 
        <section id="detail">
         <Outlet />
       </section>
     </section>
       <Footer/>
-    </>
+    </main>
   );
 }
