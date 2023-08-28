@@ -14,16 +14,7 @@ export default function BaddieList() {
     const {baddies} = useLoaderData()
     console.log(baddies)
     return (
-        <>
-        {/* <ul>
-                {
-                    baddies.map(baddie =>{
-                        return <li key={baddie.id}>{baddie.name}</li>
-                    })
-                }
-        </ul> */}
         <Baddie />
-        </>
     );
 }
 
