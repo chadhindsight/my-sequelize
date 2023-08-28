@@ -10,7 +10,7 @@ export async function loader() {
     return { baddies };
 }
 
-export default function Placeholder() {
+export default function Baddies() {
     const {baddies} = useLoaderData()
     console.log(baddies)
     return (

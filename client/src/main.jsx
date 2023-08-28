@@ -7,7 +7,7 @@ import {
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./routes/error-page";
-import Placeholder, {loader as baddieLoader} from "./routes/baddie/Placholder";
+import Placeholder, {loader as baddieLoader} from "./routes/baddie/Baddies";
 import AddBaddie, {action as addBaddieAction} from "./routes/baddie/AddBaddie";
 
 const router = createBrowserRouter([
