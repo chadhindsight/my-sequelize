@@ -5,17 +5,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import Root, {loader as baddieLoader} from "./routes/root";
+import Root, {loader as baddiesLoader} from "./routes/root";
 import ErrorPage from "./routes/error-page";
 import AddBaddie, {action as addBaddieAction} from "./routes/baddie/AddBaddie";
-import Baddie from "./routes/baddie/Baddie";
+import Baddie, {loader as baddieLoader} from "./routes/baddie/Baddie";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-    loader: baddieLoader,
+    loader: baddiesLoader,
     children: [
       {
         index:true,
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
       // show single baddie
       {
         path: 'baddies/:baddieId',
-        action: addBaddieAction,
-        element: (<Baddie />)
+        element: (<Baddie />),
+        loader: baddieLoader,
       },
       // add new baddie entry
       {
