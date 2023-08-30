@@ -1,8 +1,5 @@
-import { Form, useLoaderData, Link } from "react-router-dom";
-
-
-export async function loader() {
-    let url = "/api/baddies";
+export async function loader({params}) {
+    let url = `/api/baddies/${params.baddieId}`;
     const response = await fetch(url);
     const baddies = await response.json();
 
