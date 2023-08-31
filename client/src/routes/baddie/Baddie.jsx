@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 
 export async function loader({params}) {
+    // can url? be conditionally determined?
     let url = `/api/baddies/${params.baddieId}`;
     const response = await fetch(url);
     const baddie = await response.json();
