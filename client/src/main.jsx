@@ -9,6 +9,7 @@ import Root, {loader as baddiesLoader} from "./routes/root";
 import ErrorPage from "./routes/error-page";
 import AddBaddie, {action as addBaddieAction} from "./routes/baddie/AddBaddie";
 import Baddie, {loader as baddieLoader} from "./routes/baddie/Baddie";
+import {action as destroyBaddie} from "./routes/baddie/DeleteBaddies";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,12 @@ const router = createBrowserRouter([
         path: 'baddies/new',
         action: addBaddieAction,
         element: (<AddBaddie />)
-      }
+      },
+      // destroy baddie
+      {
+        path: "baddie/:baddieId/destroy",
+        action: destroyBaddie,
+      },
     ],
   },
 ]);
