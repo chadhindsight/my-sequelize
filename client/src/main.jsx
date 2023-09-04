@@ -21,11 +21,13 @@ const router = createBrowserRouter([
       {
         index:true,
       },
-      // show single baddie
+      // show single baddie, it has update and delete actions
       {
         path: 'baddies/:baddieId',
         element: (<Baddie />),
         loader: baddieLoader,
+          // Can you fire multi actions from same route?
+         action: destroyBaddie,
       },
       // add new baddie entry
       {
@@ -35,7 +37,7 @@ const router = createBrowserRouter([
       },
       // destroy baddie
       {
-        path: "baddie/:baddieId/destroy",
+        path: "baddie/:baddieId",
         action: destroyBaddie,
       },
     ],
