@@ -4,7 +4,6 @@ export async function action({ request }) {
   let formData = await request.formData();
   let baddieData = Object.fromEntries(formData);
   baddieData.age = parseInt(baddieData.age)
-
   try {
     const response = await fetch("/api/baddies", {
       method: "POST",

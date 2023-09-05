@@ -11,19 +11,24 @@ router.get('/', async (req, res) => {
     }
 
     catch (error) {
-        console.log('Error getting baddies', erorr);
+        console.log('Error getting baddies', error);
     }
 })
 
 // Add new entry to db
 router.post('/', async (req, res) => {
-    // use the .create method to add entry
-    const newBaddie = await baddie.create({
-        ...req.body
-    })
-    // Show full baddie list after adding a new entry
-    console.log(`The new entry is ${newBaddie}`);
-    res.status(201).json(newBaddie)
+    try {
+        // use the .create method to add entry
+        const newBaddie = await baddie.create({
+            ...req.body
+        })
+        // Show full baddie list after adding a new entry
+        console.log(`The new entry is ${newBaddie}`);
+        res.status(201).json(newBaddie)
+    } catch (error) {
+        console.log('Sorry, an unexpected error has occurred');
+
+    }
 })
 
 
