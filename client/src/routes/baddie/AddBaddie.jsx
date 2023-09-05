@@ -19,7 +19,7 @@ export async function action({ request }) {
     return errors;
   } catch (error) {
     console.error(error);
-    return "Whoops! Something went wrong";
+    return "Whoops! It seems something went wrong";
   }
 } 
 
