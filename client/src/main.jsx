@@ -10,6 +10,7 @@ import ErrorPage from "./routes/error-page";
 import AddBaddie, {action as addBaddieAction} from "./routes/baddie/AddBaddie";
 import Baddie, {loader as baddieLoader} from "./routes/baddie/Baddie";
 import {action as destroyBaddie} from "./routes/baddie/DeleteBaddies";
+import UpdateBaddie, {action as UpdateBaddieAction} from "./routes/baddie/UpdateBaddie";
 
 const router = createBrowserRouter([
   {
@@ -26,8 +27,7 @@ const router = createBrowserRouter([
         path: 'baddies/:baddieId',
         element: (<Baddie />),
         loader: baddieLoader,
-          // Can you fire multi actions from same route?
-         action: destroyBaddie,
+        action: destroyBaddie,
       },
       // add new baddie entry
       {
@@ -36,6 +36,11 @@ const router = createBrowserRouter([
         element: (<AddBaddie />)
       },
       // update baddie
+      {
+          path: 'baddies/:baddieId/update',
+        action: UpdateBaddieAction,
+        element: (<UpdateBaddie />)
+      }
     ],
   },
 ]);
