@@ -35,11 +35,7 @@ const router = createBrowserRouter([
         action: addBaddieAction,
         element: (<AddBaddie />)
       },
-      // destroy baddie
-      {
-        path: "baddie/:baddieId",
-        action: destroyBaddie,
-      },
+      // update baddie
     ],
   },
 ]);
