@@ -24,7 +24,6 @@ export default function Baddie() {
     navigate("/"); // Navigate back to the home route after successful deletion
   } catch (error) {
     console.error("Error deleting entry:", error);
-    // Handle errors here if necessary
   }
     };
 
