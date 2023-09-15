@@ -1,7 +1,7 @@
 // Footer.test.jsx
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import Footer from './src/components/Footer'; // Adjust the import path as needed
+import Footer from './src/components/Footer';
 
 describe('Footer Component', () => {
   it('renders a link', () => {
