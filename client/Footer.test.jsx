@@ -1,4 +1,4 @@
-// Footer.test.jsx
+// Tests for the footer content
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import Footer from './src/components/Footer';
