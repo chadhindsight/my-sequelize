@@ -24,7 +24,7 @@ export async function action({ request }) {
 } 
 
 const AddBaddie = () => {
-    // on client side its '/api/baddies/new', backend its '/api/baddies'
+    // on client side the endpoint is '/api/baddies/new', backend its '/api/baddies'
     const errors = useActionData()
     return (
        
