@@ -11,7 +11,7 @@ describe('Footer Component', () => {
     // Find the link element by its role
     const linkElement = screen.getByRole('link');
 
-    // Assertions
+    // Footer Assertions
     expect(linkElement).toBeInTheDocument();
     expect(linkElement).toHaveAttribute('href', 'https://chadhindsight.github.io');
     expect(linkElement).toHaveAttribute('target', '_blank');
