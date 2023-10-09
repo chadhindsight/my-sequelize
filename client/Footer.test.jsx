@@ -5,7 +5,6 @@ import Footer from './src/components/Footer';
 
 describe('Footer Component', () => {
   it('renders a link', () => {
-    // Render the Footer component
     render(<Footer />);
 
     // Find the link element by its role
