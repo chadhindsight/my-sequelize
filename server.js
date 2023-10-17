@@ -2,7 +2,7 @@ const express = require('express');
 const PORT = 15000;
 const app = express();
 
-// Allows you to parse the body.
+// Allows you to parse the body
 app.use(express.json());
 
 //Database
