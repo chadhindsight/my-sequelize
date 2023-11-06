@@ -15,6 +15,17 @@ router.get('/', async (req, res) => {
     }
 })
 
+router.get('/baddies', async (req, res) => {
+    try {
+        const baddieList = await baddie.findAll()
+        res.send(baddieList)
+    }
+
+    catch (error) {
+        console.log('Error getting baddies', error);
+    }
+})
+
 // Add new entry to db
 router.post('/', async (req, res) => {
     try {

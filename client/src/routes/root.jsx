@@ -12,7 +12,6 @@ export async function loader() {
   export default function Root() {
     let baddieTextDm = "text-md underline dark:text-white";
     const {baddies} = useLoaderData()
-    console.log('trash',baddies)
 
   return (
     <main className="bg-neutral-200 text-center dark:bg-neutral-700">
