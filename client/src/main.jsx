@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <Baddies />,
         loader: newLoader,
       },
-      // show single baddie, it has update and delete actions
+      // show a single baddie, it has update and delete actions
       {
         path: "baddies/:baddieId",
         element: <Baddie />,
