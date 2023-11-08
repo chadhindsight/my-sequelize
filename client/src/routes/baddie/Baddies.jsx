@@ -27,6 +27,7 @@ const Baddies = () => {
               Here are the biggest enterprise technology acquisitions of 2024 so
               far, in reverse chronological order.
             </p>
+            <p>{baddie.age}</p>
           </Link>
         );
       })}
