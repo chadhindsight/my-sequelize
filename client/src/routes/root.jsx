@@ -29,6 +29,13 @@ export default function Root() {
             </ul>
           </nav>
         </aside>
+        <article>
+          <p className="font-normal text-gray-700 dark:text-gray-400">
+            There is currently a panoply of women, unattached and free, making
+            music that they want to listen to — and finding that the appeal
+            crosses gender lines.
+          </p>
+        </article>
         <section id="detail">
           <Outlet />
         </section>
