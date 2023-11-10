@@ -31,7 +31,7 @@ export default function Root() {
         </aside>
         <article>
           <p
-            className="font-normal text-gray-700 dark:text-gray-400"
+            className="font-normal text-gray-700 dark:text-white"
             style={{ padding: "8%" }}
           >
             There is currently a panoply of women, unattached and free, making
@@ -46,7 +46,7 @@ export default function Root() {
             up now, because we’re putting more energy into the bars. We’re not
             on that killing [expletive] that they used to be so obsessed about.
             At the end of the day, nobody’s trying to be living like that
-            forever.”
+            forever.”- New York Times
           </p>
         </article>
         <section id="detail">
