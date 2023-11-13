@@ -24,6 +24,10 @@ footer {
   width: 100%;
 }
 
+.baddie-item {
+  margin-bottom: 3%;
+}
+
 /* Maybe you can yeet this if not needed */
 #detail.loading {
   opacity: 0.25;

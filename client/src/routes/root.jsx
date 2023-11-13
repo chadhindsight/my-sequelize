@@ -24,7 +24,7 @@ export default function Root() {
           <nav>
             <ul>
               {baddies.map((baddie) => (
-                <li className={baddieTextDm} key={baddie.id}>
+                <li className={`${baddieTextDm} baddie-item`} key={baddie.id}>
                   <Link to={`/baddies/${baddie.id}`}>{baddie.name}</Link>
                 </li>
               ))}
