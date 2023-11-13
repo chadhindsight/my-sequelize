@@ -16,6 +16,7 @@ export default function Root() {
     <main className="bg-neutral-200 text-center dark:bg-neutral-700">
       <section id="baddie-parent">
         <aside id="sidebar">
+          {/*  Navigate back to home page */}
           <Link to="/">
             <h1 className="text-3xl font-bold dark:text-white">Baddies</h1>
           </Link>
