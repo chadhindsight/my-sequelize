@@ -34,3 +34,6 @@ footer {
   transition: opacity 200ms;
   transition-delay: 200ms;
 }
+button {
+  height: fit-content;
+}
