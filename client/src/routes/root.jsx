@@ -77,7 +77,7 @@ export default function Root() {
                 clipRule="evenodd"
               ></path>
             </svg>
-            <p className="ml-2">Prev</p>
+            <p className="ml-2">Go Back</p>
           </div>
         </button>
       </section>
