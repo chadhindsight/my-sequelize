@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation, useHistory } from "react-router-dom";
 import Footer from "../components/Footer";
 import { useLoaderData } from "react-router-dom";
 
@@ -13,6 +13,10 @@ export default function Root() {
   let baddieTextDm = "text-md underline dark:text-white";
   const { baddies } = useLoaderData();
   const location = useLocation(); // Get the current url location
+
+  const goBack = () => {
+    history.back();
+  };
 
   return (
     <main className="bg-neutral-200 text-center dark:bg-neutral-700">
