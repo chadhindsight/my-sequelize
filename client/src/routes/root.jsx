@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation, useHistory } from "react-router-dom";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import { useLoaderData } from "react-router-dom";
 
@@ -13,11 +13,7 @@ export default function Root() {
   let baddieTextDm = "text-md underline dark:text-white";
   const { baddies } = useLoaderData();
   const location = useLocation(); // Get the current url location
-  const history = useHistory(); // Allows you to navigate back to previous URL
-
-  const goBack = () => {
-    history.back();
-  };
+  const navigate = useNavigate();
 
   return (
     <main className="bg-neutral-200 text-center dark:bg-neutral-700">
@@ -66,7 +62,7 @@ export default function Root() {
           }
         </section>
         <button
-          onClick={goBack}
+          onClick={() => navigate(-1)}
           type="button"
           className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-blue-700 hover:text-white px-3"
         >
