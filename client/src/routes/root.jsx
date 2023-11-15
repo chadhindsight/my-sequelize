@@ -60,7 +60,6 @@ export default function Root() {
             )
           }
         </section>
-        {/* TODO: change button color */}
         <button
           type="button"
           className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-blue-700 hover:text-white px-3"
