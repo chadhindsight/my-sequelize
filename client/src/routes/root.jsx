@@ -13,6 +13,7 @@ export default function Root() {
   let baddieTextDm = "text-md underline dark:text-white";
   const { baddies } = useLoaderData();
   const location = useLocation(); // Get the current url location
+  const history = useHistory(); // Allows you to navigate back to previous URL
 
   const goBack = () => {
     history.back();
@@ -65,6 +66,7 @@ export default function Root() {
           }
         </section>
         <button
+          onClick={goBack}
           type="button"
           className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-blue-700 hover:text-white px-3"
         >
