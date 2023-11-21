@@ -37,3 +37,6 @@ footer {
 button {
   height: fit-content;
 }
+.left-alignment {
+  text-align: left;
+}

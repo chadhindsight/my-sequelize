@@ -34,7 +34,7 @@ export default function Baddie() {
         <img
           className="w-24 h-24 mb-3 rounded-full shadow-lg text-center text-neutral-700 dark:text-neutral-200"
           src={`/images/${randomizeBaddie()}`}
-          alt="Bonnie profile"
+          alt="Baddie profile"
         />
         <h4 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
           {baddie.name}
