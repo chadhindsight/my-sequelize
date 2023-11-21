@@ -19,7 +19,7 @@ const Baddies = () => {
           <Link
             key={baddie.id}
             to={`/baddies/${baddie.id}`}
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 left-alignment"
           >
             <img
               className="w-16 h-16 mb-3 rounded-full shadow-lg text-center text-neutral-700 dark:text-neutral-200"
