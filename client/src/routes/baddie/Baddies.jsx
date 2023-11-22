@@ -1,5 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
 import { randomizeBaddiePhoto } from "./baddiePhotoNames";
+import { randomizeBaddieInfo } from "./data/baddieInfo";
 
 export async function loader() {
   let url = "/api/baddies";
@@ -31,8 +32,7 @@ const Baddies = () => {
             </h5>
             {/* TODO: change this text to some custom content */}
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2024 so
-              far, in reverse chronological order.
+              {randomizeBaddieInfo()}
             </p>
           </Link>
         );
