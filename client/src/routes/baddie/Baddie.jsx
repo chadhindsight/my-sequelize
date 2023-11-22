@@ -1,5 +1,5 @@
 import { useLoaderData, useFetcher, useNavigate, Link } from "react-router-dom";
-import { randomizeBaddie } from "./baddiePhotoNames";
+import { randomizeBaddiePhoto } from "./baddiePhotoNames";
 
 export async function loader({ params }) {
   let url = `/api/baddies/${params.baddieId}`;
@@ -33,7 +33,7 @@ export default function Baddie() {
       <section className="flex flex-col items-center pb-10">
         <img
           className="w-24 h-24 mb-3 rounded-full shadow-lg text-center text-neutral-700 dark:text-neutral-200"
-          src={`/images/${randomizeBaddie()}`}
+          src={`/images/${randomizeBaddiePhoto()}`}
           alt="Baddie profile"
         />
         <h4 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
