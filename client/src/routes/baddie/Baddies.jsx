@@ -30,7 +30,6 @@ const Baddies = () => {
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {baddie.name}
             </h5>
-            {/* TODO: change this text to some custom content */}
             <p className="font-normal text-gray-700 dark:text-gray-400">
               {randomizeBaddieInfo()}
             </p>
