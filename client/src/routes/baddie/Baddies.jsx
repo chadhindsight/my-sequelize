@@ -1,5 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
-import { randomizeBaddie } from "./baddiePhotoNames";
+import { randomizeBaddiePhoto } from "./baddiePhotoNames";
 
 export async function loader() {
   let url = "/api/baddies";
@@ -23,7 +23,7 @@ const Baddies = () => {
           >
             <img
               className="w-16 h-16 mb-3 rounded-full shadow-lg text-center text-neutral-700 dark:text-neutral-200"
-              src={`/images/${randomizeBaddie()}`}
+              src={`/images/${randomizeBaddiePhoto()}`}
               alt="Bonnie profile"
             />
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

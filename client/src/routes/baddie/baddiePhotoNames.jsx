@@ -7,7 +7,7 @@ export const baddiesPhotoNames = [
   "person-gray-photo-placeholder-woman-vector-23519845.jpg",
 ];
 
-export const randomizeBaddie = () => {
+export const randomizeBaddiePhoto = () => {
   const picToShow = Math.floor(Math.random() * baddiesPhotoNames.length);
   return baddiesPhotoNames[picToShow];
 };
