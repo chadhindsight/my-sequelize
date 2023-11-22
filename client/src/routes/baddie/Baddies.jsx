@@ -32,7 +32,7 @@ const Baddies = () => {
             {/* TODO: change this text to some custom content */}
             <p className="font-normal text-gray-700 dark:text-gray-400">
               Here are the biggest enterprise technology acquisitions of 2024 so
-              far, in reverse chronological order.
+              far, in reverse chronological order!
             </p>
           </Link>
         );
