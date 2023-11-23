@@ -24,8 +24,8 @@ const Baddies = () => {
           >
             <img
               className="w-16 h-16 mb-3 rounded-full shadow-lg text-center text-neutral-700 dark:text-neutral-200"
-              src={`/images/${randomizeBaddiePhoto()}`}
               alt="Bonnie profile"
+              src={`/images/${randomizeBaddiePhoto()}`}
             />
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {baddie.name}
