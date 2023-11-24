@@ -8,7 +8,7 @@ export async function loader() {
   const baddies = await response.json();
   return { baddies };
 }
-
+// tropics
 const Baddies = () => {
   const { baddies } = useLoaderData();
   console.log(baddies);
