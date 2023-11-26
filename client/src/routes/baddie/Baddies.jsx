@@ -10,7 +10,6 @@ export async function loader() {
 }
 const Baddies = () => {
   const { baddies: baddiesData } = useLoaderData();
-  console.log(baddiesData);
 
   return (
     <div className="grid grid-cols-4 gap-4">
