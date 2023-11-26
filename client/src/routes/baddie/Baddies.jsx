@@ -9,12 +9,12 @@ export async function loader() {
   return { baddies };
 }
 const Baddies = () => {
-  const { baddies } = useLoaderData();
-  console.log(baddies);
+  const { baddies: baddiesData } = useLoaderData();
+  console.log(baddiesData);
 
   return (
     <div className="grid grid-cols-4 gap-4">
-      {baddies.map((baddie) => {
+      {baddiesData.map((baddie) => {
         return (
           <Link
             key={baddie.id}
