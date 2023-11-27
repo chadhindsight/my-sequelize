@@ -6,6 +6,7 @@ const info = [
 ]
 
 export const randomizeBaddieInfo = () => {
+    // Get a random entry from list and return it
     const entryToDisplay = Math.floor(Math.random() * info.length);
     return info[entryToDisplay];
 };
