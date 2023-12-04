@@ -19,4 +19,6 @@ describe("Footer Component", () => {
     expect(linkElement).toHaveAttribute("rel", "noreferrer");
     expect(linkElement.textContent).toBe("Chad Hinds");
   });
+
+  it("Should have copyright", () => {});
 });
