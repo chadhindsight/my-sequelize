@@ -20,5 +20,11 @@ describe("Footer Component", () => {
     expect(linkElement.textContent).toBe("Chad Hinds");
   });
 
-  it("Should have copyright", () => {});
+  it("Should have copyright text", () => {
+    const { getByText } = render(<Footer />);
+
+    // Assert that the text " Copyright:" is present
+    const copyrightText = getByText(" Copyright:");
+    expect(copyrightText).toBeInTheDocument();
+  });
 });
