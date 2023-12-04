@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 import Footer from "./src/components/Footer";
 
@@ -20,11 +20,12 @@ describe("Footer Component", () => {
     expect(linkElement.textContent).toBe("Chad Hinds");
   });
 
-  it("Should have copyright text", () => {
-    const { getByText } = render(<Footer />);
+  it("renders the copyright text", async () => {
+    // Render the component
+    render(<Footer />);
 
-    // Assert that the text " Copyright:" is present
-    const copyrightText = getByText(" Copyright:");
+    // Wait for the text " Copyright:" to be present
+    const copyrightText = screen.getByTestId("copyright");
     expect(copyrightText).toBeInTheDocument();
   });
 });
