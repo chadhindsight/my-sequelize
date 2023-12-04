@@ -1,5 +1,5 @@
 import { useLoaderData, useFetcher, useNavigate, Link } from "react-router-dom";
-import { randomizeBaddiePhoto } from "./baddiePhotoNames";
+import { randomizeBaddiePhoto } from "./data/baddiePhotoNames";
 
 export async function loader({ params }) {
   let url = `/api/baddies/${params.baddieId}`;
