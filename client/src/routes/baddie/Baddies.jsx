@@ -1,5 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
-import { randomizeBaddiePhoto } from "./baddiePhotoNames";
+import { randomizeBaddiePhoto } from "./data/baddiePhotoNames";
 import { randomizeBaddieInfo } from "./data/baddieInfo";
 
 export async function loader() {
