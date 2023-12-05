@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import { useLoaderData } from "react-router-dom";
 import Header from "../components/Header";
 
