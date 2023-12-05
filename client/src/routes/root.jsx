@@ -1,7 +1,7 @@
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import { useLoaderData } from "react-router-dom";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 
 export async function loader() {
   let url = "/api/baddies";
