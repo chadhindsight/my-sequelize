@@ -1,6 +1,7 @@
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import { useLoaderData } from "react-router-dom";
+import Header from "../components/Header";
 
 export async function loader() {
   let url = "/api/baddies";
@@ -20,7 +21,7 @@ export default function Root() {
       <section id="baddie-parent">
         <aside id="sidebar">
           <Link to="/">
-            <h1 className="text-3xl font-bold dark:text-white">Baddies</h1>
+            <Header />
           </Link>
           <nav>
             <ul>
