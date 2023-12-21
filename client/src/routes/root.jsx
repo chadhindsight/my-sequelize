@@ -41,7 +41,7 @@ export default function Root() {
 
         <section id="detail">
           {
-            // Only render parapgraph if we are on the home route
+            // Only render the parapgraph if we are on the home route
             location.pathname === "/" ? (
               <p
                 className="font-normal text-gray-700 dark:text-white"
