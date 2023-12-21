@@ -32,11 +32,16 @@ export default function Root() {
               ))}
             </ul>
           </nav>
+          <Link to="/baddies/new">
+            <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+              Add New Entry
+            </button>
+          </Link>
         </aside>
 
         <section id="detail">
           {
-            // Only render parapgraph if we are on the home route
+            // Only render the parapgraph if we are on the home route
             location.pathname === "/" ? (
               <p
                 className="font-normal text-gray-700 dark:text-white"
