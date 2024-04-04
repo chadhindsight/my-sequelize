@@ -22,7 +22,8 @@ export default function Baddie() {
 
     try {
       await fetch(`/api/baddies/${baddie.id}`, { method: "DELETE" });
-      navigate("/"); // Navigate back to the home route after successful deletion of item
+      // Navigate back to the home route after successful deletion of item
+      navigate("/");
     } catch (error) {
       console.error("Error deleting entry:", error);
     }
